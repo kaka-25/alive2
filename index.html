@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="aliveは「日常生活をちょっと楽しくさせる」「こだわりの一品のファッション雑貨を見つけ出せる」をコンセプトにしたアイテム通販サイトです。">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>alive | ファッション雑貨通販</title>
+		
+		<!---slick(レスポンシブ対応)-->
+		<script src="js/jquery-3.4.1.min.js"></script> 
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+ 
+		
+		<!-- drawerの実装 -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+		<!--Drawer:ドロップダウンメニューの実装-->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--基本css-->
+		<!--<link rel="stylesheet" href="css/drawer/drawer.css">-->
+		<link rel="stylesheet" href="css/style.css"><!-- ※デフォルトのスタイル（style.css） -->
+		<link rel="stylesheet" href="css/tablet.css"><!-- ※タブレット用のスタイル（tablet.css） -->
+		<link rel="stylesheet" href="css/smart.css"><!-- ※スマートフォン用のスタイル（smart.css） -->
+		
+		<!--ファビコン-->
+		<link rel="shortcut icon" href="image/favicon.ico">
+	</head>
+
+	<body id="index1">
+		<header>
+			<div class="head1">
+				<div class="aliverogo">
+					<h1>
+						<a href="index.html">
+							<img src="image/alive_rogo.gif" alt="">
+							<br>ファッション雑貨通販サイト
+						</a>
+					</h1>
+				</div>
+
+				<div class="icon"><!--アイコン-->
+					<div class="icon1">
+							<a href="login.html">
+							<img src="image/header_rogo1.gif" alt="">
+							<p>ログイン</p>
+							</a>
+						</div>
+
+					<div class="icon2">
+							<a href="okiniiri.html">
+							<img src="image/header_rogo2.gif" alt="">
+							<p>お気に入り</p>
+							</a>
+						</div>
+
+					<div class="icon3">
+							<a href="cart.html">
+							<img src="image/header_rogo3.gif" alt="">
+							<p>カート</p>
+							</a>
+						</div>
+				</div><!--アイコン終わり-->
+
+			</div><!--headea1終わり-->
+		</header>
+			
+		<div class="drawer drawer--right">
+			<div role="banner">
+			  <button type="button" class="drawer-toggle drawer-hamburger">
+					<span class="sr-only">toggle navigation</span>
+					<span class="drawer-hamburger-icon"></span>
+				  <span class="menu1"><br>Menu</span>
+				</button>
+				<nav class="drawer-nav" role="navigation">
+					<ul class="drawer-menu">
+						<li><a class="drawer-brand" href="#">Menu</a></li>
+						<li><a class="drawer-menu-item" href="index.html">Top</a></li>
+						<li><a class="drawer-menu-item" href="sale.html">Sale</a></li>
+						<li><a class="drawer-menu-item" href="new.html">New</a></li>
+						<li><a class="drawer-menu-item" href="tokusyu.html">特集</a></li>
+						<li><a class="drawer-menu-item" href="women.html">Women</a></li>
+						<li><a class="drawer-menu-item" href="men.html">Men</a></li>
+
+						<!-- ここからドロップダウンの中身 -->
+						<ul class="drawer-menu">
+							<li class="drawer-dropdown">
+								<a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Category <span class="drawer-caret"></span>
+								</a>
+								<ul class="drawer-dropdown-menu">
+									<li><a class="drawer-dropdown-menu-item" href="bag1.html">bag</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="hat.html">hat</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="accessories.html">Accessories</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="watcht.html">watcht</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="shoes.html">shoes</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="tie.html">tie</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="belt.html">belt</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="sunglasses.html">sunglasses</a></li>
+									<li><a class="drawer-dropdown-menu-item" href="wallet.html">wallet</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- ここまでドロップダウンの中身 -->
+
+						<li><a class="drawer-menu-item" href="guide.html">ご利用ガイド</a></li>
+						<li><a class="drawer-menu-item" href="contact.html">お問い合わせ</a></li>
+					</ul>
+				</nav>
+			</div>
+			<main role="main">
+				<!-- Page content -->
+			</main>
+		</div>
+
+
+
+
+<!--/////////////////////top写真////////////////////////////////-->
+		<article class="top">
+
+			
+<!--/////////////////////レスポンシブslick////////////////////////////////-->
+
+	<!--スライダーの記述-->
+			<div class="main_visual01">
+				<div class="slider"> <!--classは任意の名前でOK-->
+					<a href="sale.html"><div><img src="image/top_sale_moji.jpg" alt="sale"></div></a>
+					<a href="new.html"><div><img src="image/top_new_moji.jpg" alt="new"></div></a>
+					<a href="tokusyu.html"><div><img src="image/top_tokusyu_moji.jpg" alt="tokusyu"></div></a>
+				</div>
+			</div><!--main_visual01-->
+			<!--スライダーの記述ここまで-->
+
+			
+			
+
+
+			<a href="women.html">
+				<h2 class="topphoto1">
+					<span>Women</span>
+				</h2>
+			</a>
+			
+			<a href="men.html">
+				<h2 class="topphoto2">
+					<span>Men</span>
+				</h2>
+			</a>
+			
+			
+			<div class="topkowari">	<!--小割写真-->	
+				<a class="topphoto3" href="bag1.html">
+					<h2>
+						<span>Bag</span>
+					</h2>
+				</a>	
+				
+				<a class="topphoto4" href="hat.html">
+					<h2>
+						<span>Hat</span>
+					</h2>
+				</a>	
+				
+				<a class="topphoto5" href="accessories.html">
+					<h2>
+						<span>Accessories</span>
+					</h2>
+				</a>	
+
+				<a class="topphoto6" href="watcht.html">
+					<h2>
+						<span>Watch</span>
+					</h2>
+				</a>
+
+				<a class="topphoto7" href="shose.html">
+					<h2>
+						<span>Shoes</span>
+					</h2>
+				</a>
+				
+				<a class="topphoto8" href="tie.html">
+					<h2>
+						<span>Tie</span>
+					</h2>
+				</a>
+				
+			</div>
+		</article>
+		
+	<!--///////////////////////ページ内リンク//////////////////////////-->	
+		<div id="page">
+			<div class="pagetop">
+				<a href="index.html#index1">
+					<div>
+						<p>TOP</p>
+					</div>
+				</a>
+			</div>
+		</div>			
+			
+	<!--///////////////////////フッター//////////////////////////-->	
+		<footer>
+			<div>
+				<a href="#"><img src="image/footer_rogo1_fa.gif" alt=""></a>
+			　<a href="#"><img src="image/footer_rogo2_in.gif" alt=""></a>
+			　<a href="#"><img src="image/footer_rogo3_tw.gif" alt=""></a>
+			
+			</div>　
+			<small>&copy;alive 2019</small>
+		</footer>
+		
+	
+<!--//////////////////////////hanbargaプラグイン//////////////////////////-->		
+		<script>
+			$(document).ready(function() {
+			$('.drawer').drawer();
+			});
+		</script>
+<!--//////////////////////////slickプラグイン//////////////////////////
+		<script src="js/slick.min.js"></script>-->
+			<script>/*ここからオプションの記述*/
+				$('.slider').slick({
+				    autoplay:true,
+				    autoplaySpeed:1800,
+				    dots:true,
+					default:false,
+					default:true,		    
+				});
+		</script>		
+			
+		<!--レスポンシブ対応-slick-->
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/func_slick.js"></script>	
+		<script>
+			$(function() {
+			    $('.slider').slick(); //スライダーにする部分のclassまたはidを指定
+			});
+		</script>
+		<script>/*ここからオプションの記述*/
+			$('.slider').slick({
+				autoplay:true,
+				autoplaySpeed:2000,
+				dots:true,
+			});
+		</script>		
+	</body>
+</html>
