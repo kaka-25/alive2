@@ -1,0 +1,804 @@
+/*msyifont*/
+@font-face{
+font-family:'msyifont'; 
+	src:url(../fonts/msyi.woff) format('woff');
+}
+/*msyid使用時css要素に下記いれる
+font-family: 'msyifont', serif;*/
+
+/*GARAfont*/
+@font-face {font-family:'GARAfont'; 
+src:url(../fonts/GARA.woff) format('woff'); }
+/*msyid使用時css要素に下記いれる
+font-family: 'GARAfont', serif;*/
+
+/*'GARAfont*/
+@font-face {font-family:'GARA.woffslick'; 
+src:url(../fonts/GARA.woffslick.woff) format('woff'); }
+
+/*------------------------共通------------------------*/
+html{
+	overflow-y:scroll;
+}
+
+*{
+	margin:0;
+	padding: 0;
+	color: #4f4946;
+}
+body{
+	font-family:"メイリオ","Hiragino Kaku Gothic Pro",sans-serif;
+	margin:0;
+	width:100%;
+}
+
+h1,h2,h3,p{
+	line-height:1.5;
+}
+p{
+	font-size:16px;
+}
+
+a{
+	text-decoration:none;
+}
+h2{
+	font-size:90px;
+	font-family: 'GARAfont', serif;
+	color:white;
+}
+h3{	font-size:13px;
+	font-weight: bold;
+}
+a:hover{
+	color: #B71A35;
+}
+a:visited{
+	color:black;
+}
+/*------------------------ヘッダー------------------------*/
+
+header{
+	background-color: white;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:2;
+	width:100%;
+	box-sizing: border-box;
+	padding:15px;
+
+}
+
+.head1{
+	margin:auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.aliverogo{
+	float:left;
+	flor: flex;
+}	
+.aliverogo br{
+	display: none;	
+}
+.aliverogo a{
+	padding-bottom: 10px;
+	
+}
+
+.aliverogo img{
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.alivemoji{
+	margin-top: -5px;
+
+}
+.icon{
+	width:180px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	float:right;
+	padding-right:70px;
+	text-align: center;
+	margin-top: 5px;
+}
+header h1{
+	font-size:14px;
+	/*float: right;*/
+	padding-top: 10px;
+	
+}
+
+header p{
+	font-size:10px;
+}
+
+
+.menu1{
+	margin-top:11px;
+	display:block;
+	font-size:11px;
+	text-align: center;
+	
+}
+
+.drawer--right.drawer-open .drawer-hamburger{
+	right:0;
+	width:1.8em;
+	
+}
+
+/*------hanbargaの色-------*/
+
+.drawer-menu-item{
+	color:#4f4946;
+}
+.drawer-menu-item:hover{
+	color:#b71a35;
+}
+
+.drawer-brand{
+	color:#4f4946;
+}
+
+.drawer-brand:hover{
+	color:#4f4946;
+}
+
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
+	background-color: #4f4946;
+}
+/*-----hanbarga----*/
+div .drawer-dropdown-menu li{
+	list-style:disc;
+	font-size: 14px;
+	overflow: visible;
+}
+
+.drawer-dropdown-menu{
+	padding-left: 50px;	
+}
+
+.drawer-dropdown-menu .drawer-dropdown-menu-item{
+	padding:0;
+	line-height:2.5;
+}
+	
+.drawer-menu{
+	z-index:99;
+}
+	/*------------------------topページ slider------------------------*/
+	.slider{
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:70px;
+		width:100%;
+		padding-top:10px;
+}
+	.slider img{
+		width:100%;
+}
+
+
+
+/*------------------------top写真共通------------------------*/
+.top{
+	width:100%;
+}
+
+.top span{
+	color:white;
+
+	text-shadow:0 5px 10px #4f4946;
+	font-size: 92px;
+}
+
+
+/*--topページ　women写真--*/
+.topphoto1{
+	position: relative;
+	background-image:url(../image/top_women.jpg);
+	background-repeat:no-repeat;
+	padding-top: 26%;
+	background-size: contain;	
+}
+.topphoto1:hover{
+	background-image:url(../image/top_women_70par.jpg);
+}
+
+.topphoto1 span{
+	position: absolute;
+	top:30%;
+	left:15%;
+}
+/*--topページ　men写真---*/
+.topphoto2{
+	position: relative;
+	background-image:url(../image/top_men.jpg);
+	background-repeat:no-repeat;
+	padding-top: 26%;
+	background-size: contain;
+	margin-top:10px
+}
+.topphoto2:hover{
+	background-image:url(../image/top_men_70par.jpg);
+}
+
+.topphoto2 span{
+	position: absolute;
+	top:35%;
+	right:15%;
+}
+
+/*----topページ　top小割----*/
+
+.topkowari{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.topkowari span{
+	font-size:64px;
+	bottom:2%;
+	left:10%;
+}
+
+/*--topページ　bag写真---*/
+
+.topphoto3{
+	position: relative;
+	background-image:url(../image/top_bag.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	margin-top:10px;
+	background-size: contain;
+}
+.topphoto3:hover{
+	background-image:url(../image/top_bag_70par.jpg);
+}
+.topphoto3 span{
+	position: absolute;
+}
+
+/*--topページ　Hat写真--*/
+.topphoto4{
+	position: relative;
+	background-image:url(../image/top_hat.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	margin-top:10px;
+	background-size: contain;
+}
+.topphoto4:hover{
+	background-image:url(../image/top_hat_70par.jpg);
+}
+.topphoto4 span{
+	position: absolute;
+}
+
+/*--topページ　Accessories写真--*/
+.topphoto5{
+	position: relative;
+	background-image:url(../image/top_accessories.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	margin-top:10px;
+	background-size: contain;
+}
+.topphoto5:hover{
+	background-image:url(../image/top_accessories_70par.jpg);
+}
+.topphoto5 span{
+	position: absolute;
+}
+
+/*--topページ　Watcht写真--*/
+.topphoto6{
+	position: relative;
+	background-image:url(../image/top_watcht.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	background-size: contain;
+}
+.topphoto6:hover{
+	background-image:url(../image/top_watcht_70par.jpg);
+}
+.topphoto6 span{
+	position: absolute;
+}
+
+/*--topページ　Shose写真--*/
+.topphoto7{
+	position: relative;
+	background-image:url(../image/top_shose.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	background-size: contain;
+}
+.topphoto7:hover{
+	background-image:url(../image/top_shose_70par.jpg);
+}
+.topphoto7 span{
+	position: absolute;
+}
+
+/*--topページ　Tie写真--*/
+.topphoto8{
+	position: relative;
+	background-image:url(../image/top_tai.jpg);
+	background-repeat:no-repeat;
+	width: 33.3333%;
+	padding-top:33.3333%;
+	background-size: contain;
+}
+.topphoto8:hover{
+	background-image:url(../image/top_tai_70par.jpg);
+}
+.topphoto8 span{
+	position: absolute;
+}
+
+
+/*-------------------------商品カテゴリ共通-----------------------*/
+.mainimg{
+	width: 100%;
+	padding-top:80px;
+}
+
+/*----商品カテゴリ共通　タイトル文字------*/
+.mainimg h2{
+	position: relative;
+	color:white;
+	text-shadow:0 5px 10px #4f4946;
+	background-repeat:no-repeat;
+	padding-top: 26%;
+	background-size: contain;	
+}
+
+.mainimg span{
+	position: absolute;
+	color:white;
+	text-shadow:0 5px 10px #4f4946;
+	top:30%;
+	right:10%;
+	font-size: 92px;
+}
+
+/*----------------商品共通("Product")---------------*/
+.product{
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-content:flex-end;
+	margin:0 auto;
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+
+/*----商品共通写真--------*/
+.productwaku{
+	margin-top:50px;
+	width: 100%;
+}
+.productwaku img{
+	vertical-align: bottom;
+	width: 100%;
+	border: solid 1px #4F4946;
+}
+
+/*----商品共通文字--------*/
+.number{
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+.price span,.pricenew span,.pricesale span{
+	font-size: 14px;
+	font-weight:normal;
+}
+.price,.pricenew,.pricesale{
+	font-weight: bold;
+}
+
+/*----new文字--------*/
+.pricenew::after {
+	content:"NEW";
+	background: #FF5383;
+	color:white;
+	padding:0 5px;
+	font-size: 10px;
+}
+
+/*----sale文字50%OFF--------*/
+.pricesale::after {
+	content:"50%OFF";
+	background: #B71A35;
+	color:white;
+	font-size: 10px;
+	padding:0 5px;
+}
+.pricesale br{
+	display: none;
+}
+.motopricesale{
+	font-weight:normal;
+	text-decoration-line:line-through; 
+}
+
+
+/*----------------------カテゴリーページ共通タイトル文字------------------*/
+/*----bagなどページ　タイトル文字------*/
+.font3moji span{
+	right:20%;
+}
+.font5moji span{
+	right:15%;
+}
+/*-------------------bagページ----------------------*/
+.mainimg h2{
+	background-image:url(../image/bag-image.jpg);
+}
+/*-------------------hatページ----------------------*/
+/*----hatページ　タイトル写真------*/
+.mainimg .hatphoto h2{
+	background-image:url(../image/hat_image.jpg);	
+}
+
+/*------------------accessoriesページ--------------*/
+/*----accessoriesページ　タイトル写真------*/
+.mainimg .accessoriesphoto h2{
+	background-image:url(../image/accessories_image.jpg);	
+}
+/*-------------------watchページ----------------------*/
+/*----watchページ　タイトル写真------*/
+.mainimg .watchphoto h2{
+	background-image:url(../image/watch_image.jpg);	
+}
+/*-------------------shoseページ----------------------*/
+/*----shoseページ　タイトル写真------*/
+.mainimg .shosephoto h2{
+	background-image:url(../image/shose_image.jpg);	
+}
+/*-------------------tieページ----------------------*/
+/*----shoseページ　タイトル写真------*/
+.mainimg .tiephoto h2{
+	background-image:url(../image/tie_image.jpg);	
+}
+/*-------------------womenページ----------------------*/
+/*----womenページ　タイトル写真------*/
+.mainimg .womenphoto h2{
+	background-image:url(../image/women_image.jpg);	
+}
+	
+/*-------------------tokusyuページ----------------------*/
+/*----womenページ　タイトル写真------*/
+.mainimg .tokusyuphoto h2{
+	background-image:url(../image/top_tokusyu_moji.jpg);
+}
+/*-------------------menページ----------------------*/
+/*----menページ　タイトル写真------*/
+.mainimg .menphoto h2{
+	background-image:url(../image/top_men.jpg);	
+}
+/*-------------------saleページ----------------------*/
+/*----womenページ　タイトル写真------*/
+.mainimg .salephoto h2{
+	background-image:url(../image/top_sale_moji.jpg);	
+}
+
+/*-------------------newページ----------------------*/
+/*----womenページ　タイトル写真------*/
+.mainimg .newphoto h2{
+	background-image:url(../image/top_new_moji.jpg);
+}
+/*----women　menページ　ページ移動------*/
+.pagewarp{
+	width: 100%;
+}
+.pagewarp p{
+	width: 100%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:50px;
+	text-align: center;
+	
+}
+
+/*---------------------------商品拡大ページlargebagwoman1----------------------------------*/
+/*------------------商品拡大ページ共通----------------------*/
+.large,h1.largetitle {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+h1.largetitle {
+	margin-top:100px;
+	text-align: center;
+	border-bottom: solid 1px #4f4946;
+}
+
+.large{
+	margin-top: 50px;
+	display: flex;
+	width:1000px;
+}
+/*------------------商品拡大ページリスト共通　.largelist---------*/
+.largelist{
+	width:400px;
+}
+.largelist .number{
+	font-size: 14px;
+}
+
+.largelist .setumei{
+	font-size: 18px;
+}
+
+.largelist .setumei span{
+	font-size: 16px;
+}
+
+.largelist .pricenew,.largelist .price,.largelist .pricesale{
+	font-size: 32px;
+	border-bottom: solid 1px #4f4946;
+	padding-bottom: 10px;
+}
+
+
+.largelist .zaiko{
+	margin-top: 20px;
+	border-bottom: solid 1px #4f4946;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.largelist .zaiko img{
+vertical-align: middle;
+}
+.largelist .size{
+	margin-top: 10px;
+}
+.largelist .tipe{
+
+}
+.largelist .amount, .largelist .tipe, .largelist .material{
+	margin-top: 20px;
+}
+
+.largelist .amount input,.largelist .size input{
+	height:25px;
+	width:50px;
+}
+
+
+.largelist small{
+	display: block;
+	margin-top: 40px;
+	font-size: 10px;
+}
+
+.largelist .pricenew::after,.largelist .pricesale::after {
+    font-size: 16px;
+}
+
+/*--------swiper----------*/
+.swiper-container {
+	width: 500px;
+	height: auto;
+	margin:0 auto;
+}
+
+/*------------------------ご利用ガイド　.guidein----------------------------*/
+/*ご利用ガイド共通*/
+/*ご利用ガイドたいとる*/
+.guidein{
+		width:100%;	
+}
+/*ご利用ガイドアイコン*/
+.guideicon{
+		width:100%;
+}
+
+
+.guidein section>h1{
+	border-bottom: solid 1px  #4f4946;
+}
+
+/*ご利用ガイドアイコン*/
+/*ご利用ガイドアイコン下*/
+.guidein2 aside{
+	background-color: #c8c9ca;	
+	box-sizing: border-box;
+	padding: 10px;
+}
+.guidein2{
+	width:100%;	
+}
+.guidein2 aside p{
+		width:100%;
+}
+/*ご利用ガイド詳細共通*/
+.guidein2>div{
+	width:100%;
+}
+
+/*------------------------問い合わせ----------------------------*/
+/*問い合わせフォーム*/
+.form1,form,.form1 p,.form1 input,.form1 select, .form1 textarea{
+	width: 100%;
+}
+
+/*------------------------お気に入り----------------------------*/
+.cart,.okiniiri{
+	width: 100%;	
+}
+/*------------------------ページトップ内リンク----------------------------*/
+
+.pagetop{
+	position:fixed;
+	z-index:1;
+	bottom:0;
+	right:0;
+}
+.pagetop div{
+	background-color:rgba(79,73,70,0.8);
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+.pagetop p{
+	color: white;
+	padding-top: 15px;
+	text-align: center;
+	font-size: 15px;
+	box-sizing: border-box;
+
+}
+
+
+/*--------------------------------フッター----------------------------*/
+footer{
+	width:100%;
+	margin-top: 50px;
+	text-align:center;
+}
+
+footer div{
+	width:100%;
+}
+footer small{
+	display:block;
+	margin-top:-15px;
+	margin-bottom: 50px;
+}
+
+
+/*--------------------------------////////////////////レスポンシブ1025px///////////----------------------------
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width:1025px){
+/*------------------------ご利用ガイド　.guidein----------------------------*/
+	/*ご利用ガイド共通*/
+	.guidein{
+			width:80%;
+			margin: 0 auto;
+	}
+	
+	/*ご利用ガイドたいとる*/
+	.guidein section>h1{
+		margin-top: 100px;
+		font-size: 21px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	/*ご利用ガイドアイコン*/
+	section .guideicon{
+		margin-top:30px;
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+		text-align: center;
+		align-items: center;
+	}
+	.guidein section>div p{
+		font-size: 12px;
+	}
+	/*ご利用ガイドアイコン下*/
+	.guidein2 aside{
+		width:20%;
+	}
+	.guidein2 aside,.guidein2 aside p{
+		text-align: center;	
+	}
+	.guidein2 aside p{
+		font-size:12px;		
+	}
+	/*ご利用ガイド詳細共通*/
+	.guidein2>div{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-top: 50px;
+	}
+	.guidein2 p{
+		font-size:13px;
+	}
+	.guidein2>div div{
+	width:75%;
+	}
+	.guidein2 h3{
+		margin-top: 5px;
+	}
+	.guidein2 h3:first-child{
+		margin-top:0;
+	}
+	
+	/*------------------------問い合わせ----------------------------*/
+	/*問い合わせフォーム*/
+	.form1,form,.form1 p,.form1 input,.form1 select, .form1 textarea{
+		width:500px;
+		margin: 0 auto;
+	}
+	.form1 input,textarea{
+		display: block;
+	}
+	
+	.form1 p{
+		font-size: 13px;
+		margin-top: 30px;
+	}
+	.form1 input,.form1 select, .form1 textarea{
+		height: 30px;
+		
+	}
+	.form1 .formsub{
+		font-size: 10px;
+		margin-top: 50px;
+	}
+	.form1 textarea{
+		height: 200px;
+	}
+	.form1 form p:last-child input{
+		width: 150px;
+	}
+
+	/*------------------------ログイン------------------------*/
+	#login1 .form1 form p:nth-child(3) input{
+		width: 150px;
+	}
+	#login1 .form1 p:first-child{
+		font-size: 16px;
+	}
+	/*------------------------カートとお気に入り----------------------------*/
+	.cart,.okiniiri{
+		width: 80%;	
+		margin: 0 auto;
+	}
+	.cart,.okiniiri p{
+	width: 50%;	
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #c8c9ca;	
+		text-align: center;
+	}
+
+
+}/*min-width:1025px終わり*/
+
+

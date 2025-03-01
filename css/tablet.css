@@ -1,0 +1,182 @@
+/*=======================================================*/
+/*769以上1024以下の場合、boxA,boxB,boxCの背景色を変更する*/
+/*=======================================================*/
+@media screen and (max-width:1024px){
+	/*------------------------ヘッダー------------------------*/
+	.icon{
+		padding-right:50px;
+	}
+	/*------------------------topページ slider------------------------*/
+	.slider{
+		padding-top:20px;
+	}
+	
+	/*------------------------top写真共通------------------------*/
+	
+	.top span{
+	font-size: 62px;
+	}
+	
+	/*----topページ　top小割----*/
+	.topkowari span{
+		font-size:42px;
+		left:10%;
+	}
+	/*-------------------商品ページ共通----------------------*/
+	/*----商品共通写真--------*/
+	.product{
+		padding:50px;
+	}
+	
+	.productwaku,.productwaku img .product p{
+		width: 250px;
+	}
+	/*----商品共通文字--------*/
+	.setumei{
+		font-size: 12px;
+	}
+	
+	/*----sale文字50%OFF--------*/
+	
+	
+	/*----bagなどページ　タイトル文字------*/
+	.font3moji span{
+		right:20%;
+		font-size:72px;
+		top:30%;
+	}
+	.font5moji span{
+		font-size:72px;
+		top:20%;
+	}
+	.font10moji span{
+		right:10%;
+		font-size:72px;
+		top:20%;
+	}
+
+/*---------------------------商品拡大ページlargebagwoman1----------------------------------*/
+/*------------------商品拡大ページ共通----------------------*/
+.large,h1.largetitle {
+	width:500px;
+}
+	.large{
+		display:block;
+		margin-right: auto;
+		mar-left: auto;
+		width:500px;
+	}
+	.largelist{
+		width:500px;
+	}
+	.largelist .material br{
+		display: none;
+	}
+
+
+	/*------------------------topページ slider------------------------*/
+	.slider{
+		padding-top:0px;
+	}
+/*------------------------ご利用ガイド　.guidein----------------------------*/
+	/*ご利用ガイド共通*/
+	.guidein{
+			width:80%;
+			margin: 0 auto;
+	}
+	
+	/*ご利用ガイドたいとる*/
+	.guidein section>h1{
+		margin-top: 100px;
+		font-size: 21px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	/*ご利用ガイドアイコン*/
+	section .guideicon{
+		margin-top:30px;
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+		text-align: center;
+		align-items: center;
+	}
+	.guidein section>div p{
+		font-size: 12px;
+	}
+	/*ご利用ガイドアイコン下*/
+	.guidein2 aside{
+		width:20%;
+	}
+	.guidein2 aside,.guidein2 aside p{
+		text-align: center;	
+	}
+	.guidein2 aside p{
+		font-size:12px;		
+	}
+	/*ご利用ガイド詳細共通*/
+	.guidein2>div{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-top: 50px;
+	}
+	.guidein2 p{
+		font-size:13px;
+	}
+	.guidein2>div div{
+	width:75%;
+	}
+	.guidein2 h3{
+		margin-top: 5px;
+	}
+	.guidein2 h3:first-child{
+		margin-top:0;
+	}
+	/*問い合わせフォーム*/
+	.form1,form,.form1 p,.form1 input,.form1 select, .form1 textarea{
+		width:500px;
+		margin: 0 auto;
+	}
+	.form1 input,textarea{
+		display: block;
+	}
+	.form1 p{
+		font-size: 13px;
+		margin-top: 30px;
+	}
+	.form1 input,.form1 select, .form1 textarea{
+		height: 30px;
+		
+	}
+	.form1 .formsub{
+		font-size: 10px;
+		margin-top: 50px;
+	}
+	.form1 textarea{
+		height: 200px;
+	}
+	.form1 form p:last-child input{
+		width: 150px;
+	}
+	/*------------------------ログイン------------------------*/
+	#login1 .form1 form p:nth-child(3) input{
+		width: 150px;
+	}
+	#login1 .form1 p:first-child{
+		font-size: 16px;
+	}
+	/*------------------------カートとお気に入り----------------------------*/
+	.cart,.okiniiri{
+		width: 80%;	
+		margin: 0 auto;
+	}
+	.cart,.okiniiri p{
+	width: 50%;	
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #c8c9ca;	
+		text-align: center;
+	}
+}/*終わり*/
